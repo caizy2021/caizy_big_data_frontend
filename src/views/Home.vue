@@ -37,6 +37,8 @@ import item1 from "../components/item1.vue";
 import item2 from "../components/item2.vue";
 import item3 from "../components/item3.vue";
 import item4 from "../components/item4.vue";
+
+import { inject } from "vue";
 export default {
   components: {
     item,
@@ -44,6 +46,13 @@ export default {
     item2,
     item3,
     item4,
+  },
+
+  setup() {
+    const $echarts = inject("echarts");
+    const $http = inject("axios");
+    console.log($echarts);
+    console.log($http);
   },
 };
 </script>
@@ -79,7 +88,7 @@ header {
     height: 10.5rpx;
     border: 1px solid blue;
     padding: 0.125rem;
-    margin: .25rem;
+    margin: 0.25rem;
   }
 }
 </style>
