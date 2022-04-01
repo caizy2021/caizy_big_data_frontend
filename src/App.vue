@@ -6,6 +6,9 @@
 import { provide } from "vue";
 import * as echarts from "echarts";
 import axios from "axios";
+
+// 设置axios的基准路径
+axios.defaults.baseURL = "http://caizy.cc:2101";
 export default {
   setup() {
     // provide('名字随便起','传递的内容')

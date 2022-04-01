@@ -38,7 +38,7 @@ import item2 from "../components/item2.vue";
 import item3 from "../components/item3.vue";
 import item4 from "../components/item4.vue";
 
-import { inject } from "vue";
+// import { inject } from "vue";
 export default {
   components: {
     item,
@@ -49,10 +49,10 @@ export default {
   },
 
   setup() {
-    const $echarts = inject("echarts");
-    const $http = inject("axios");
-    console.log($echarts);
-    console.log($http);
+    // const $echarts = inject("echarts");
+    // const $http = inject("axios");
+    // console.log($echarts);
+    // console.log($http);
   },
 };
 </script>
