@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>图表4</h2>
+    <h2>产品类别</h2>
     <div class="chart">图表的容器</div>
   </div>
 </template>
