@@ -7,45 +7,47 @@
     <section class="container">
       <!-- 左容器 -->
       <section class="container-left">
-        <item>
-          <item1 />
-        </item>
-        <item>
-          <item2 />
-        </item>
+        <Item>
+          <Item1 />
+        </Item>
+        <Item>
+          <Item2 />
+        </Item>
       </section>
       <!-- 中容器 -->
       <section class="container-center">
-        <h2>地图展示</h2>
+        <MapPage />
       </section>
       <!-- 右容器 -->
       <section class="container-right">
-        <item>
-          <item3 />
-        </item>
-        <item>
-          <item4 />
-        </item>
+        <Item>
+          <Item3 />
+        </Item>
+        <Item>
+          <Item4 />
+        </Item>
       </section>
     </section>
   </div>
 </template>
 
 <script>
-import item from "../components/item.vue";
-import item1 from "../components/item1.vue";
-import item2 from "../components/item2.vue";
-import item3 from "../components/item3.vue";
-import item4 from "../components/item4.vue";
+import Item from "../components/item.vue";
+import Item1 from "../components/item1.vue";
+import Item2 from "../components/item2.vue";
+import Item3 from "../components/item3.vue";
+import Item4 from "../components/item4.vue";
+import MapPage from "../components/MapPage.vue";
 
 // import { inject } from "vue";
 export default {
   components: {
-    item,
-    item1,
-    item2,
-    item3,
-    item4,
+    Item,
+    Item1,
+    Item2,
+    Item3,
+    Item4,
+    MapPage,
   },
 
   setup() {

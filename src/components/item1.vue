@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>图表1</h2>
+    <h2>销售总量</h2>
     <div class="chart" id="oneChart">图表的容器</div>
   </div>
 </template>
