@@ -47,10 +47,20 @@ export default {
           },
           xAxis: {
             type: "value",
+            axisLine: {
+              lineStyle: {
+                color: "#fff",
+              },
+            },
           },
           yAxis: {
             type: "category",
             data: xdata,
+            axisLine: {
+              lineStyle: {
+                color: "#fff",
+              },
+            },
           },
           series: [
             {
