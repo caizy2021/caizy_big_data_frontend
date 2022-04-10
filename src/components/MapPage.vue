@@ -11,7 +11,7 @@ export default {
     const $echarts = inject("echarts");
     let mapData = reactive({});
     async function getState() {
-      mapData = await axios.get("http://127.0.0.1:8080/map/china.json");
+      mapData = await axios.get("/china/data");
     }
     onMounted(() => {
       getState().then(() => {
@@ -23,7 +23,7 @@ export default {
      * 封装函数 插入地图
      */
     const initMap = () => {
-      $echarts.registerMap("china", mapData.data);
+      $echarts.registerMap("china", mapData.data.chinaMap);
       const chinaMap = $echarts.init(document.querySelector(".map"));
       // console.log(chinaMap);
       chinaMap.setOption({
