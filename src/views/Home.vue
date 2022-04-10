@@ -77,7 +77,7 @@ header {
   min-width: 1200px;
   max-width: 2048px;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
   padding: 0.125rem 0.125rem 0;
   // background-color: gray;
   display: flex;
@@ -88,7 +88,7 @@ header {
   &-center {
     flex: 5;
     height: 10.5rpx;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     padding: 0.125rem;
     margin: 0.25rem;
   }
